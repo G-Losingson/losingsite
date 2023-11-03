@@ -1,0 +1,157 @@
+body{
+    background-color: whitesmoke;
+}
+
+h2{    
+    color: rgb(0, 208, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    font-size: x-small;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 72, 255);
+}
+/*Pour la partie barre de navigation*/
+/*Sa position lorsqu'on défile la page*/
+.Nav{
+    position: sticky;
+    top: 0;
+}
+.Nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#333;
+}
+.Nav li{
+    float: left;
+}
+.Nav li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+/*Fonctionnalité quand le curseur vient dessus*/
+.Nav li a:hover{
+    background-color: black;
+}
+
+/*Quand une page est active*/
+.active{
+    background-color: rgb(0, 208, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+/*Pour la partie article*/
+.Classe{
+    font-size: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #ffff;
+    padding: 0%;
+}
+.Classe p{
+    text-align: justify;
+    margin: 2%;
+    padding-bottom: 5%;
+}
+
+.Pied{
+    position: static;
+    width: 100%;
+    text-align: center;
+    background-color: darkgrey;
+    bottom: 0%; 
+    height: 5%;
+}
+
+/*Style pour le table*/
+.table{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.table table{
+    margin: auto;
+    width: 80%;
+}
+.table table th{
+    text-transform: capitalize;
+    background-color: gray;
+    font-size: 12px;
+    height: 40px;
+}
+.table table td{
+    font-size: 10px;
+}
+.table table th, .table table td{
+    text-align: center;
+    border: 1px solid black;
+}
+.table table tr:hover{
+    background-color: lightblue;
+}
+.pied{
+    bottom: 0%;
+}
+
+.formulaire{
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+}
+.formulaire input, .formulaire textarea{
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 8px 0;
+    /*pour l'angle de bordure*/
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+}
+.formulaire textarea{
+    resize: none;
+}
+.formulaire input[type=submit]{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1080px) {
+    .Classe{
+        width: 50%;
+    }
+    .formulaire{
+        width: 50%;
+    }
+    .table{
+        width: 50%;
+    }
+}
